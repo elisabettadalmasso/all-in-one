@@ -5,6 +5,7 @@ import Eventi from './pages/Eventi'
 import ChiSiamo from './pages/ChiSiamo'
 import Contatti from './pages/Contatti'
 import Navbar from './components/Navbar'
+import Footer from './components/Footer'
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <Route path="/chi-siamo" element={<ChiSiamo />} />
       <Route path="/contatti" element={<Contatti />} />
     </Routes>
+    <Footer />
     </>
   )
 }
