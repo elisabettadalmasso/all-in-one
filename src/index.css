@@ -5,14 +5,15 @@
 }
 
 :root {
-    --bg-primary: #041a2f;
-    --bg-secondary: #071e34;
-    --bg-card: #0d2a42;
-    --border: #1e3a5f;
-    --accent: #4f6ef7;
-    --accent-hover: #818cf8;
-    --text-primary: #f1f5f9;
-    --text-secondary: #94a3b8;
+    --bg-primary: #0b0b0c;
+    --bg-secondary: #111214;
+    --bg-card: #17191c;
+    --border: #2a2f38;
+    --accent: #3b82f6;
+    --accent-hover: #2563eb;
+    --accent-soft: #60a5fa;
+    --text-primary: #f5f5f5;
+    --text-secondary: #9ca3af;
     --font-display: "Orbitron", sans-serif;
     --font-body: "Exo 2", sans-serif;
 }
@@ -26,3 +27,5 @@ body {
 h1, h2, h3 {
     font-family: var(--font-display);
 }
+
+

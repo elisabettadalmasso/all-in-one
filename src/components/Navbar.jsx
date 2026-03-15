@@ -7,9 +7,10 @@ function Navbar() {
     const [isOpen,setIsOpen] = useState(false)
 
     return (
-        <nav>
+        <nav className='navbar'>
+            <div className="nav-left">
             <Link to="/"><img src="/logoAllioneB.png" alt="All In One" className="navbar-logo" /></Link>
-
+            </div>
              <button className="hamburger" onClick={() => setIsOpen(!isOpen)}>
                 <span></span>
                 <span></span>

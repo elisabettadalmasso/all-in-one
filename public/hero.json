@@ -3,7 +3,7 @@
         "id": 1,
         "immagine": "/bananaSotto.jpg",
         "titolo": "Dove la tecnica diventa spettacolo",
-        "position" : "center bottom"
+        "position" : "center 30%"
     },
     {
         "id": 2,

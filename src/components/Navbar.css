@@ -53,9 +53,34 @@
 
 /* desktop: links visibili, hamburger nascosto */
 @media (min-width: 768px) {
-    .navbar-links {
+    .navbar {
+        background-color: transparent;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 100;
+    }
+
+    .nav-left {
         display: flex;
-        gap: 32px;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .navbar-logo {
+        width: auto;
+        height: 70px;
+        margin: 8px;
+    }
+
+    .navbar-links {
+       list-style: none;
+       display: flex;
+       align-items: center;
+       gap: 30px;
+       margin-right: 12px;
+       padding: 0;
     }
 
     .hamburger {
@@ -63,15 +88,15 @@
     }
 
     .navbar-links a {
-        color: var(--text-secondary);
-        text-decoration: none;
-        font-size: 14px;
-        letter-spacing: 1px;
-        text-transform: uppercase;
-        transition: color 0.2s;
-    }
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: color 0.2s;
+}
 
-    .navbar-links a:hover {
-        color: var(--accent);
-    }
+.navbar-links a:hover {
+    color: var(--accent);
+}
 }

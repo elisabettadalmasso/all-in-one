@@ -23,3 +23,102 @@
     color: var(--text-primary);
     font-size: 1.8rem;
 }
+
+.servizi {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+    padding: 40px 24px;
+   
+}
+
+.servizi-card {
+    background-color: var(--bg-card);
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid var(--border);
+    text-align: center;
+}
+
+.servizi-icona {
+    font-size: 2.5rem;
+    margin-bottom: 12px;
+}
+
+.servizi-card h2 {
+    color: var(--accent);
+}
+
+.servizi-card p {
+    color: var(--text-secondary);
+}
+
+
+
+.lavori-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+    padding: 40px 24px;
+}
+
+.lavoro-card {
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+    aspect-ratio: 16/9;
+}
+
+.lavoro-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.lavoro-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(transparent, rgba(0,0,0,0.85));
+    padding: 40px 16px 16px;
+}
+
+.lavoro-overlay p {
+    color: #f5f5f5;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0;
+}
+
+
+
+
+
+@media (min-width: 768px) {
+    .hero {
+        height: 90vh;
+    }
+
+    .hero h1 {
+        font-size: 3rem;
+        top: 50%;
+        left: 48px;
+        font-style: italic;
+        color: #f3f3f3;
+        text-shadow: 2px 2px 8px rgba(0,0,0,0.8);
+        max-width: 400px;
+    }
+
+    .servizi {
+        grid-template-columns: repeat(3, 1fr);
+        padding: 60px 48px;
+    }
+
+    
+    .lavori-grid {
+        grid-template-columns: repeat(3, 1fr);
+        padding: 60px 48px;
+    }
+
+}
