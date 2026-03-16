@@ -1,81 +1,84 @@
-import { useEffect, useState } from "react"
-import "./Home.css"
+import { Link } from "react-router-dom";
+import { useEffect, useState } from "react";
+import "./Home.css";
+import useFetch from "../useFetch";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
-function Home () {
+function Home() {
+    const [fotoAttiva, setFotoAttiva] = useState(0);
 
-    const [foto,setFoto] = useState([])
-    const [fotoAttiva,setFotoAttiva] = useState(0)
+    const { dati: foto, loading: loadingFoto, errore: erroreFoto } = useFetch("/hero.json");
+    const { dati: servizi, loading: loadingServizi } = useFetch("/servizi.json");
+    const { dati: lavori, loading: loadingLavori } = useFetch("/lavori.json");
 
-    const [servizi,setServizi] = useState([])
+    useEffect(() => {
+        AOS.init({
+            duration: 800,
+            easing: "ease-in-out",
+        });
 
-    const [lavori, setLavori] = useState([])
+        const timer = setInterval(() => {
+            setFotoAttiva((prev) => (prev + 1) % foto.length);
+        }, 6000);
 
-useEffect(() => {
-    async function scambiaHero() {
-        const trans = await fetch("hero.json")
-        const res = await trans.json()
-        setFoto(res)
-    }
-    scambiaHero()
-},[])
+        return () => {
+            clearInterval(timer);
+            AOS.refresh();
+        };
+    }, [foto]);
 
-useEffect(() => {
-    const timer = setInterval(() => {
-        setFotoAttiva(prev => (prev + 1) % foto.length)
-    }, 6000);
-    return() => clearInterval(timer)
-},[foto])
+    useEffect(() => {
+        AOS.refresh();
+    }, [fotoAttiva]);
 
-useEffect(() => {
-    async function serviziCard() {
-        const serv = await fetch("servizi.json")
-        const servRes = await serv.json()
-        setServizi(servRes)
-    }
-    serviziCard()
-},[])
+    if (erroreFoto) return <p>Errore di caricamento</p>;
+    if (loadingFoto) return <p>Caricamento..</p>;
 
-
-useEffect(() => {
-    async function nsLavori() {
-        const lav = await fetch("lavori.json")
-        const lavRes = await lav.json()
-        setLavori(lavRes)
-    }
-    nsLavori()
-}, [])
-
-return(
-    <>
-    <div className="hero">
-        <img 
-        key={fotoAttiva}
-        src={foto[fotoAttiva]?.immagine} 
-        alt={foto[fotoAttiva]?.titolo} 
-        style={{objectPosition: foto[fotoAttiva]?.position}}/>
-        <h1>{foto[fotoAttiva]?.titolo}</h1>
-        
-    </div>
-    <div className="servizi">
-    {servizi.map((servizio) => (
-        <div className="servizi-card" key={servizio.id}>
-            <p className="servizi-icona">{servizio.icona}</p>
-            <h2>{servizio.titolo}</h2>
-            <p>{servizio.descrizione}</p>
-        </div>
-    ))}
-    </div>
-    <div className="lavori-grid">
-        {lavori.map((lavoro) => (
-            <div key={lavoro.id} className="lavoro-card">
-            <img src={lavoro.foto} alt={lavoro.titolo}  style={{objectPosition: lavoro.position}}/>
-            <div className="lavoro-overlay">
-                <p>{lavoro.titolo}</p>
-                </div>
+    return (
+        <>
+            <div className="hero aos-init aos-animate" key={fotoAttiva}>
+                <img
+                    key={fotoAttiva}
+                    src={foto[fotoAttiva]?.immagine}
+                    alt={foto[fotoAttiva]?.titolo}
+                    style={{ objectPosition: foto[fotoAttiva]?.position }}
+                    data-aos="zoom-in"
+                />
+                <h1 data-aos="fade-left" data-aos-delay="400">
+                    {foto[fotoAttiva]?.titolo}
+                </h1>
             </div>
-        ))}
-    </div>
-</>
-)
+            <div className="servizi">
+                {servizi.map((servizio, index) => (
+                    <div className="servizi-card" key={servizio.id} data-aos="fade-up" data-aos-delay={index * 100}>
+                        <p className="servizi-icona">{servizio.icona}</p>
+                        <h2>{servizio.titolo}</h2>
+                        <p>{servizio.descrizione}</p>
+                    </div>
+                ))}
+            </div>
+            <div className="lavori-grid">
+                {lavori.map((lavoro, index) => (
+                    <div key={lavoro.id} className="lavoro-card" data-aos="fade-left" data-aos-delay={index * 100}>
+                        <img src={lavoro.foto} alt={lavoro.titolo} style={{ objectPosition: lavoro.position }} />
+                        <div className="lavoro-overlay">
+                            <p>{lavoro.titolo}</p>
+                        </div>
+                    </div>
+                ))}
+            </div>
+            <section className="cta">
+                <h2>Facciamo grande il tuo evento</h2>
+                <p>Contattaci per un preventivo o scopri chi siamo</p>
+                <div className="cta-bottoni">
+                    <Link to="/contatti" className="cta-btn-primary">Contattaci</Link>
+                    <Link to="/chi-siamo" className="cta-btn-secondary">Chi siamo</Link>
+                </div>
+            </section>
+
+        </>
+    );
 }
-export default Home
+
+export default Home;
