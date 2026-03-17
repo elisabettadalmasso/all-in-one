@@ -1,19 +1,19 @@
 [
     {
         "id": 1,
-        "immagine": "/bananaSotto.jpg",
+        "immagine": "/bananaSotto.avif",
         "titolo": "Dove la tecnica diventa spettacolo",
         "position" : "center 30%"
     },
     {
         "id": 2,
-        "immagine": "/schermoCoroB.jpg",
+        "immagine": "/schermoCoroB.avif",
         "titolo": "Audio, luci e video per ogni evento",
         "position": "center center"
     },
     {
         "id": 3,
-        "immagine": "/tapageLatoBN.jpg",
+        "immagine": "/tapageLatoBN.avif",
         "titolo": "Il tuo evento, la nostra firma",
         "position": "center top"
     }

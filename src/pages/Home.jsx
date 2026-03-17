@@ -18,13 +18,13 @@ function Home() {
             easing: "ease-in-out",
         });
 
+        if (!foto || foto.length === 0) return;
         const timer = setInterval(() => {
             setFotoAttiva((prev) => (prev + 1) % foto.length);
         }, 6000);
 
         return () => {
             clearInterval(timer);
-            AOS.refresh();
         };
     }, [foto]);
 
@@ -34,38 +34,50 @@ function Home() {
 
     if (erroreFoto) return <p>Errore di caricamento</p>;
     if (loadingFoto) return <p>Caricamento..</p>;
+    if (!foto || foto.length === 0) return <p>Nessuna foto disponibile</p>;
 
     return (
         <>
-            <div className="hero aos-init aos-animate" key={fotoAttiva}>
-                <img
-                    key={fotoAttiva}
-                    src={foto[fotoAttiva]?.immagine}
-                    alt={foto[fotoAttiva]?.titolo}
-                    style={{ objectPosition: foto[fotoAttiva]?.position }}
-                    data-aos="zoom-in"
-                />
+            <div className="hero" key={fotoAttiva}>
+                <picture>
+                    <source srcSet={foto[fotoAttiva]?.immagine} type="image/avif" />
+                    <img
+                        src={foto[fotoAttiva]?.immagine.replace('.avif', '.jpg')}
+                        alt={foto[fotoAttiva]?.titolo}
+                        style={{ objectPosition: foto[fotoAttiva]?.position }}
+                        data-aos="zoom-in"
+                    />
+                </picture>
+
                 <h1 data-aos="fade-left" data-aos-delay="400">
                     {foto[fotoAttiva]?.titolo}
                 </h1>
             </div>
             <div className="servizi">
                 {servizi.map((servizio, index) => (
-                    <div className="servizi-card" key={servizio.id} data-aos="fade-up" data-aos-delay={index * 100}>
+                    <Link to="/servizi" className="servizi-card" key={servizio.id} data-aos="fade-up" data-aos-delay={index * 100}>
                         <p className="servizi-icona">{servizio.icona}</p>
                         <h2>{servizio.titolo}</h2>
                         <p>{servizio.descrizione}</p>
-                    </div>
+                    </Link>
                 ))}
             </div>
             <div className="lavori-grid">
                 {lavori.map((lavoro, index) => (
-                    <div key={lavoro.id} className="lavoro-card" data-aos="fade-left" data-aos-delay={index * 100}>
-                        <img src={lavoro.foto} alt={lavoro.titolo} style={{ objectPosition: lavoro.position }} />
+                    <Link to="/eventi" key={lavoro.id} className="lavoro-card" data-aos="flip-left" data-aos-delay={index * 100}>
+
+                        <picture>
+                            <source srcSet={lavoro.foto} type="image/avif" />
+                            <img
+                                src={lavoro.fallback || lavoro.foto.replace('.avif', '.jpg')}
+                                alt={lavoro.titolo}
+                                style={{ objectPosition: lavoro.position }}
+                            />
+                        </picture>
                         <div className="lavoro-overlay">
                             <p>{lavoro.titolo}</p>
                         </div>
-                    </div>
+                    </Link>
                 ))}
             </div>
             <section className="cta">
