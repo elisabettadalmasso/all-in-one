@@ -1,0 +1,183 @@
+[
+    {
+        "id": 1,
+        "nome": "Midas",
+        "logo": "/loghi/midas.svg",
+        "categoria": "audio"
+    },
+    {
+        "id": 2,
+        "nome": "dB Technologies",
+        "logo": "/loghi/dbtechnologies-white.png",
+        "categoria": "audio"
+    },
+    {
+        "id": 3,
+        "nome": "Martin Audio",
+        "logo": "/loghi/Martin-Audio-LONDON.png",
+        "categoria": "audio"
+    },
+    {
+        "id": 4,
+        "nome": "JBL",
+        "logo": "/loghi/JBL Black Logo Vector.svg",
+        "categoria": "audio"
+    },
+    {
+        "id": 5,
+        "nome": "Lab Gruppen",
+        "logo": "/loghi/lab-gruppen.svg",
+        "categoria": "audio"
+    },
+    {
+        "id": 6,
+        "nome": "Linea Research",
+        "logo": "/loghi/LR-Logo_Blue-Light-Kings-Logo.svg",
+        "categoria": "audio"
+    },
+    {
+        "id": 7,
+        "nome": "Crest Audio",
+        "logo": "/loghi/CrestAudio_Logo_White.webp",
+        "categoria": "audio"
+    },
+    {
+        "id": 8,
+        "nome": "Shure",
+        "logo": "/loghi/Shure Icon Logo Vector.png",
+        "categoria": "audio"
+    },
+    {
+        "id": 9,
+        "nome": "DPA",
+        "logo": "/loghi/dpa.svg",
+        "categoria": "audio"
+    },
+    {
+        "id": 10,
+        "nome": "Sennheiser",
+        "logo": "/loghi/Sennheiser Logo Vector.svg",
+        "categoria": "audio"
+    },
+    {
+        "id": 11,
+        "nome": "AKG",
+        "logo": "/loghi/akg.svg",
+        "categoria": "audio"
+    },
+    {
+        "id": 12,
+        "nome": "Meyer Sound",
+        "logo": "/loghi/meyer-sound.svg",
+        "categoria": "audio"
+    },
+    {
+        "id": 13,
+        "nome": "Pioneer",
+        "logo": "/loghi/Pioneer_Corporation_Logo.png",
+        "categoria": "audio"
+    },
+    {
+        "id": 14,
+        "nome": "MA Lighting",
+        "logo": "/loghi/maGiusto.png",
+        "categoria": "luci"
+    },
+    {
+        "id": 15,
+        "nome": "ChamSys",
+        "logo": "/loghi/chamsys.svg",
+        "categoria": "luci"
+    },
+    {
+        "id": 16,
+        "nome": "Clay Paky",
+        "logo": "/loghi/clay_pakyGiusto.svg",
+        "categoria": "luci"
+    },
+    {
+        "id": 17,
+        "nome": "Robe",
+        "logo": "/loghi/robe-black.svg",
+        "categoria": "luci"
+    },
+    {
+        "id": 18,
+        "nome": "Showtec",
+        "logo": "/loghi/showtec.png",
+        "categoria": "luci"
+    },
+    {
+        "id": 19,
+        "nome": "Spotlight",
+        "logo": "/loghi/Spotlight-Logo.png",
+        "categoria": "luci"
+
+    },
+    {
+        "id": 20,
+        "nome": "Infiled",
+        "logo": "/loghi/infiled.svg",
+        "categoria": "video"
+    },
+    {
+        "id": 21,
+        "nome": "NovaStar",
+        "logo": "/loghi/novastar.svg",
+        "categoria": "video"
+    },
+    {
+        "id": 22,
+        "nome": "Blackmagic Design",
+        "logo": "/loghi/gn-logo.svg",
+        "categoria": "video"
+    },
+    {
+        "id": 23,
+        "nome": "Epson",
+        "logo": "/loghi/epson.svg",
+        "categoria": "video"
+    },
+    {
+        "id": 24,
+        "nome": "Green-GO",
+        "logo": "/loghi/greengo.svg",
+        "categoria": "video"
+    },
+    {
+        "id": 25,
+        "nome": "Luminex",
+        "logo": "/loghi/Luminex_logo.svg",
+        "categoria": "video"
+    },
+    {
+        "id": 26,
+        "nome": "Litec",
+        "logo": "/loghi/litec.svg",
+        "categoria": "strutture"
+    },
+    {
+        "id": 27,
+        "nome": "Kuzar",
+        "logo": "/loghi/kuzar.svg",
+        "categoria": "strutture"
+    },
+    {
+        "id": 28,
+        "nome": "GIS",
+        "logo": "/loghi/gis-giusta.png",
+        "categoria": "strutture"
+    },
+    {
+        "id": 29,
+        "nome": "Stagesmarts",
+        "logo": "/loghi/stagesmarts.svg",
+        "categoria": "elettricita"
+    },
+    {
+        "id": 30,
+        "nome": "Powerbox by Valentini",
+        "logo": "/loghi/syntax.svg",
+        "categoria": "elettricita"
+    }
+]

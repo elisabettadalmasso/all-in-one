@@ -1,0 +1,204 @@
+h1 {
+    font-family: var(--font-display);
+    padding: 24px 16px;
+    margin-bottom: 16px;
+}
+
+.servizi-completo {
+    padding: 30px 20px;  
+}
+
+.servizio-card-dettaglio {
+    background-color: var(--bg-card);
+    border: none;
+    border-left: 4px solid var(--accent);
+    box-shadow: 0 2px 8px rgba(0, 123, 255, 0.2);
+    border-radius: 8px;
+    padding: 20px 30px;
+    margin: 0 0 30px 0;
+}
+.servizio-card-dettaglio h2 {
+    color: var(--accent);
+    padding-bottom: 10px;
+}
+
+.servizio-content {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.servizio-foto-piccola {
+    display: block;
+    flex-shrink: 0; 
+    width: 150px;
+    height: 150px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+
+.servizio-foto-piccola img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: grayscale(100%);
+}
+
+
+
+.servizio-testo a {
+    text-align: center;
+    color: var(--accent);
+    border: 1px solid var(--accent);
+    padding: 8px 16px;
+    border-radius: 4px;
+    display: inline-block;
+}
+
+.servizio-testo a:hover {
+    text-decoration: underline;
+}
+
+/* SEZIONE BRAND - STILE ATS */
+.brand-section {
+    position: relative;
+    padding: 80px 20px;
+    background-image: url('/palcoFask.avif');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 100vh;
+}
+
+/* Overlay scuro + B/N sulla foto */
+.brand-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.70);
+    backdrop-filter: grayscale(100%);
+    z-index: 1;
+}
+
+/* Tutto il contenuto sopra l'overlay */
+.brand-section > * {
+    position: relative;
+    z-index: 2;
+}
+
+/* Titolo */
+.brand-section h2 {
+    text-align: center;
+    color: white;
+    font-size: 2.5rem;
+    margin-bottom: 60px;
+    font-family: var(--font-display);
+}
+
+/* BOTTONI FILTRO */
+.brand-filtri {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content: center;
+    margin-bottom: 60px;
+}
+
+.brand-filtri button {
+    background-color: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+.brand-filtri button.active {
+    background-color: var(--accent);
+    border-color: var(--accent);
+}
+
+.brand-filtri button:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+    border-color: rgba(255, 255, 255, 0.4);
+}
+
+/* GRID LOGHI - STILE ATS */
+.brand-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 50px 40px;
+    align-items: center;
+    justify-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.brand-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+/* LOGHI BIANCHI */
+.brand-logo img {
+    width: 100%;
+    max-width: 130px;
+    height: auto;
+    max-height: 60px;
+    object-fit: contain;
+    filter: brightness(0) invert(1);  /* ← rende tutto bianco */
+    opacity: 0.8;
+    transition: all 0.3s ease;
+}
+
+.brand-logo:hover img {
+    opacity: 1;
+    transform: scale(1.08);
+}
+
+
+
+@media (min-width: 768px) {
+    .servizi-page {  
+        padding-top: 90px;  
+    }
+    
+    .servizi-completo {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 24px;
+        padding: 60px 48px;
+    }
+    h1 {
+        padding: 24px 48px;
+    }
+    .servizio-card-dettaglio {
+        margin: 0;  
+    }
+    .brand-section {
+        padding: 100px 48px;
+    }
+    
+    .brand-section h2 {
+        font-size: 3rem;
+    }
+    
+    .brand-grid {
+        grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+        gap: 60px 50px;
+    }
+    
+    .brand-logo img {
+        max-width: 150px;
+        max-height: 70px;
+    }
+}
