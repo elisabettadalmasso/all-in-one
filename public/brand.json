@@ -14,7 +14,7 @@
     {
         "id": 3,
         "nome": "Martin Audio",
-        "logo": "/loghi/Martin-Audio-LONDON.png",
+        "logo": "/loghi/MartinIphone.svg",
         "categoria": "audio"
     },
     {
@@ -50,7 +50,7 @@
     {
         "id": 9,
         "nome": "DPA",
-        "logo": "/loghi/dpa.svg",
+        "logo": "/loghi/dpa-logo-black-screen.svg",
         "categoria": "audio"
     },
     {
@@ -135,7 +135,7 @@
     {
         "id": 23,
         "nome": "Epson",
-        "logo": "/loghi/epson.svg",
+        "logo": "/loghi/logoEpson.png",
         "categoria": "video"
     },
     {
@@ -179,5 +179,11 @@
         "nome": "Powerbox by Valentini",
         "logo": "/loghi/syntax.svg",
         "categoria": "elettricita"
+    },
+    {
+        "id": 31,
+        "nome": "ETC Litghting",
+        "logo": "/loghi/ETC_wht.png",
+        "categoria": "luci"
     }
 ]
