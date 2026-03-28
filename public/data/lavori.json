@@ -1,0 +1,21 @@
+[
+    {
+        "id": 1,
+        "titolo": "Atipico Festival",
+        "foto": "/palcoFaskW.avif",
+        "position": "center center"
+    },
+    {
+        "id": 2,
+        "titolo": "Suoni dal Monviso",
+        "foto": "/monvisoDavanti.avif",
+        "position": "fit-content"
+    },
+    {
+        "id": 3,
+        "titolo": "Savix Comics & Bricks",
+        "foto": "/Savix.avif",
+        "fallback": "/Savix.jpeg",
+        "position": "center"
+    }
+]

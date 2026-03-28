@@ -1,0 +1,21 @@
+[
+    {
+        "id": 1,
+        "titolo": "Progettazione su misura",
+        "foto": "/palcoDietroTeatro.avif",
+        "descrizioneCompleta": "Analizziamo le caratteristiche uniche del tuo evento per creare soluzioni su misura. Dalla scelta dell'attrezzatura alla configurazione tecnica, ogni dettaglio è studiato per garantire il massimo risultato."
+    },
+    {
+        "id": 2,
+        "titolo": "Full Service",
+        "foto": "/palcoObliquo.avif",
+        "descrizioneCompleta": "Il nostro team tecnico si occupa di ogni aspetto: dall'analisi delle tue esigenze alla progettazione, dal montaggio alla gestione in loco. Tu ti concentri sull'evento, noi garantiamo la perfetta riuscita tecnica."
+    },
+    {
+        "id": 3,
+        "titolo": "Noleggio",
+        "foto": "/SandraMixer.avif",
+        "fallback": "/SandraMixer.jpeg",
+        "isNoleggio": true
+    }
+]
