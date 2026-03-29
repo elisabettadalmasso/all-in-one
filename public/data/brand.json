@@ -1,189 +1,189 @@
 [
     {
         "id": 1,
-        "nome": "Midas",
+        "name": "Midas",
         "logo": "/loghi/midas.svg",
-        "categoria": "audio"
+        "category": "audio"
     },
     {
         "id": 2,
-        "nome": "dB Technologies",
+        "name": "dB Technologies",
         "logo": "/loghi/dbtechnologies-white.png",
-        "categoria": "audio"
+        "category": "audio"
     },
     {
         "id": 3,
-        "nome": "Martin Audio",
+        "name": "Martin Audio",
         "logo": "/loghi/MartinIphone.svg",
-        "categoria": "audio"
+        "category": "audio"
     },
     {
         "id": 4,
-        "nome": "JBL",
+        "name": "JBL",
         "logo": "/loghi/JBL Black Logo Vector.svg",
-        "categoria": "audio"
+        "category": "audio"
     },
     {
         "id": 5,
-        "nome": "Lab Gruppen",
+        "name": "Lab Gruppen",
         "logo": "/loghi/lab-gruppen.svg",
-        "categoria": "audio"
+        "category": "audio"
     },
     {
         "id": 6,
-        "nome": "Linea Research",
+        "name": "Linea Research",
         "logo": "/loghi/LR-Logo_Blue-Light-Kings-Logo.svg",
-        "categoria": "audio"
+        "category": "audio"
     },
     {
         "id": 7,
-        "nome": "Crest Audio",
+        "name": "Crest Audio",
         "logo": "/loghi/CrestAudio_Logo_White.webp",
-        "categoria": "audio"
+        "category": "audio"
     },
     {
         "id": 8,
-        "nome": "Shure",
+        "name": "Shure",
         "logo": "/loghi/Shure Icon Logo Vector.png",
-        "categoria": "audio"
+        "category": "audio"
     },
     {
         "id": 9,
-        "nome": "DPA",
+        "name": "DPA",
         "logo": "/loghi/dpa-logo-black-screen.svg",
-        "categoria": "audio"
+        "category": "audio"
     },
     {
         "id": 10,
-        "nome": "Sennheiser",
+        "name": "Sennheiser",
         "logo": "/loghi/Sennheiser Logo Vector.svg",
-        "categoria": "audio"
+        "category": "audio"
     },
     {
         "id": 11,
-        "nome": "AKG",
+        "name": "AKG",
         "logo": "/loghi/akg.svg",
-        "categoria": "audio"
+        "category": "audio"
     },
     {
         "id": 12,
-        "nome": "Meyer Sound",
+        "name": "Meyer Sound",
         "logo": "/loghi/meyer-sound.svg",
-        "categoria": "audio"
+        "category": "audio"
     },
     {
         "id": 13,
-        "nome": "Pioneer",
+        "name": "Pioneer",
         "logo": "/loghi/Pioneer_Corporation_Logo.png",
-        "categoria": "audio"
+        "category": "audio"
     },
     {
         "id": 14,
-        "nome": "MA Lighting",
+        "name": "MA Lighting",
         "logo": "/loghi/maGiusto.png",
-        "categoria": "luci"
+        "category": "lights"
     },
     {
         "id": 15,
-        "nome": "ChamSys",
+        "name": "ChamSys",
         "logo": "/loghi/chamsys.svg",
-        "categoria": "luci"
+        "category": "lights"
     },
     {
         "id": 16,
-        "nome": "Clay Paky",
+        "name": "Clay Paky",
         "logo": "/loghi/clay_pakyGiusto.svg",
-        "categoria": "luci"
+        "category": "lights"
     },
     {
         "id": 17,
-        "nome": "Robe",
+        "name": "Robe",
         "logo": "/loghi/robe-black.svg",
-        "categoria": "luci"
+        "category": "lights"
     },
     {
         "id": 18,
-        "nome": "Showtec",
+        "name": "Showtec",
         "logo": "/loghi/showtec.png",
-        "categoria": "luci"
+        "category": "lights"
     },
     {
         "id": 19,
-        "nome": "Spotlight",
+        "name": "Spotlight",
         "logo": "/loghi/Spotlight-Logo.png",
-        "categoria": "luci"
+        "category": "lights"
 
     },
     {
         "id": 20,
-        "nome": "Infiled",
+        "name": "Infiled",
         "logo": "/loghi/infiled.svg",
-        "categoria": "video"
+        "category": "video"
     },
     {
         "id": 21,
-        "nome": "NovaStar",
+        "name": "NovaStar",
         "logo": "/loghi/novastar.svg",
-        "categoria": "video"
+        "category": "video"
     },
     {
         "id": 22,
-        "nome": "Blackmagic Design",
+        "name": "Blackmagic Design",
         "logo": "/loghi/gn-logo.svg",
-        "categoria": "video"
+        "category": "video"
     },
     {
         "id": 23,
-        "nome": "Epson",
+        "name": "Epson",
         "logo": "/loghi/logoEpson.png",
-        "categoria": "video"
+        "category": "video"
     },
     {
         "id": 24,
-        "nome": "Green-GO",
+        "name": "Green-GO",
         "logo": "/loghi/greengo.svg",
-        "categoria": "video"
+        "category": "video"
     },
     {
         "id": 25,
-        "nome": "Luminex",
+        "name": "Luminex",
         "logo": "/loghi/Luminex_logo.svg",
-        "categoria": "video"
+        "category": "video"
     },
     {
         "id": 26,
-        "nome": "Litec",
+        "name": "Litec",
         "logo": "/loghi/litec.svg",
-        "categoria": "strutture"
+        "category": "structures"
     },
     {
         "id": 27,
-        "nome": "Kuzar",
+        "name": "Kuzar",
         "logo": "/loghi/kuzar.svg",
-        "categoria": "strutture"
+        "category": "structures"
     },
     {
         "id": 28,
-        "nome": "GIS",
+        "name": "GIS",
         "logo": "/loghi/gis-giusta.png",
-        "categoria": "strutture"
+        "category": "structures"
     },
     {
         "id": 29,
-        "nome": "Stagesmarts",
+        "name": "Stagesmarts",
         "logo": "/loghi/stagesmarts.svg",
-        "categoria": "elettricita"
+        "category": "electricity"
     },
     {
         "id": 30,
-        "nome": "Powerbox by Valentini",
+        "name": "Powerbox by Valentini",
         "logo": "/loghi/syntax.svg",
-        "categoria": "elettricita"
+        "category": "electricity"
     },
     {
         "id": 31,
-        "nome": "ETC Litghting",
+        "name": "ETC Litghting",
         "logo": "/loghi/ETC_wht.png",
-        "categoria": "luci"
+        "category": "lights"
     }
 ]

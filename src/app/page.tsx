@@ -41,23 +41,23 @@ function Home() {
                     <source srcSet={photos[activePhoto]?.immagine} type="image/avif" />
                     <img
                         src={photos[activePhoto]?.immagine.replace('.avif', '.jpg')}
-                        alt={photos[activePhoto]?.titolo}
+                        alt={photos[activePhoto]?.title}
                         style={{ objectPosition: photos[activePhoto]?.position }}
                         data-aos="zoom-in"
                     />
                 </picture>
 
                 <h1 data-aos="fade-left" data-aos-delay="400">
-                    {photos[activePhoto]?.titolo}
+                    {photos[activePhoto]?.title}
                 </h1>
             </div>
             
             <div className="services">
                 {services.map((service, index) => (
                     <Link href="/servizi" className="service-card" key={service.id} data-aos="fade-up" data-aos-delay={index * 100}>
-                        <p className="service-icon">{service.icona}</p>
-                        <h2>{service.titolo}</h2>
-                        <p>{service.descrizione}</p>
+                        <p className="service-icon">{service.icon}</p>
+                        <h2>{service.title}</h2>
+                        <p>{service.description}</p>
                     </Link>
                 ))}
             </div>
@@ -66,15 +66,15 @@ function Home() {
                 {works.map((work, index) => (
                     <Link href="/eventi" key={work.id} className="work-card" data-aos="flip-left" data-aos-delay={index * 100}>
                         <picture>
-                            <source srcSet={work.foto} type="image/avif" />
+                            <source srcSet={work.photo} type="image/avif" />
                             <img
-                                src={work.fallback || work.foto.replace('.avif', '.jpg')}
-                                alt={work.titolo}
+                                src={work.fallback || work.photo.replace('.avif', '.jpg')}
+                                alt={work.title}
                                 style={{ objectPosition: work.position }}
                             />
                         </picture>
                         <div className="work-overlay">
-                            <p>{work.titolo}</p>
+                            <p>{work.title}</p>
                         </div>
                     </Link>
                 ))}
