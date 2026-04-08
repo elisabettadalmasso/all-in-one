@@ -11,7 +11,7 @@ h1 {
 .service-card-detail {
     background-color: var(--bg-card);
     border: none;
-    border-left: 4px solid var(--accent);
+    border-left: 6px solid var(--accent);
     box-shadow: 0 2px 8px rgba(0, 123, 255, 0.2);
     border-radius: 8px;
     padding: 20px 30px;

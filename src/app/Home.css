@@ -117,7 +117,7 @@
 
 /* CTA Section - Contenuto con max-width */
 .cta {
-    background: var(--bg-card);
+    background: linear-gradient(135deg, var(--accent) 0%, var(--bg-card) 50%, var(--bg-primary) 100%);
     border: 1px solid var(--border);
     border-radius: 12px;
     padding: 3rem 1.5rem;
@@ -129,7 +129,7 @@
 }
 
 .cta h2 {
-    color: var(--accent-soft);
+    color: white;
     margin-bottom: 1rem;
     font-size: 2rem;
 }
@@ -159,7 +159,8 @@
 }
 
 .cta-btn-primary {
-    background: var(--accent);
+    background: transparent;
+    border: 2px solid white;
     color: var(--text-primary);
 }
 

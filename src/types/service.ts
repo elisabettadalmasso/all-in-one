@@ -1,3 +1,12 @@
+//interface fr Hero.json
+export interface Hero {
+    id: number
+    photo: string
+    title: string
+    position?: string
+}
+
+
 //interface for services.json 
 export interface Service {
     id: number
@@ -31,4 +40,12 @@ export interface Work {
     photo: string
     fallback?: string
     position?: string
+}
+
+// interface for eventTypes.json
+export interface EventType {
+    id: number
+    category: string
+    photo: string
+    description: string
 }

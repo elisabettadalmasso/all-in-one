@@ -6,13 +6,14 @@ import "./Home.css";
 import useFetch from "@/hooks/useFetch";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { Hero, Service, Work } from "@/types/service";
 
 function Home() {
     const [activePhoto, setActivePhoto] = useState(0);
 
-    const { data: photos, loading: loadingPhotos, error: errorPhotos } = useFetch("/data/hero.json");
-    const { data: services, loading: loadingServices } = useFetch("/data/servizi.json");
-    const { data: works, loading: loadingWorks } = useFetch("/data/lavori.json");
+    const { data: photos, loading: loadingPhotos, error: errorPhotos } = useFetch<Hero>("/data/hero.json");
+    const { data: services, loading: loadingServices } = useFetch<Service>("/data/services.json");
+    const { data: works, loading: loadingWorks } = useFetch<Work>("/data/works.json");
 
     useEffect(() => {
 
@@ -38,9 +39,9 @@ function Home() {
         <div className="page-container">
             <div className="hero" key={activePhoto}>
                 <picture>
-                    <source srcSet={photos[activePhoto]?.immagine} type="image/avif" />
+                    <source srcSet={photos[activePhoto]?.photo} type="image/avif" />
                     <img
-                        src={photos[activePhoto]?.immagine.replace('.avif', '.jpg')}
+                        src={photos[activePhoto]?.photo.replace('.avif', '.jpg')}
                         alt={photos[activePhoto]?.title}
                         style={{ objectPosition: photos[activePhoto]?.position }}
                         data-aos="zoom-in"
