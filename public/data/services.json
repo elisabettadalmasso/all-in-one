@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "title": "Noleggio",
+        "description": "Attrezzatura professionale audio, luci e video per ogni tipo di evento. Scegli quello che ti serve, pensiamo noi alla qualità.",
+        "icon": "🎛️"
+    },
+    {
+        "id": 2,
+        "title": "Full Service",
+        "description": "Gestiamo tutto noi, dalla consulenza al montaggio. Tu pensa all'evento, noi alla tecnica.",
+        "icon": "🎬"
+    },
+    {
+        "id": 3,
+        "title": "Progettazione su misura",
+        "description": "Ogni evento è diverso. Progettiamo soluzioni tecniche personalizzate per le tue esigenze specifiche.",
+        "icon": "📐"
+    }
+]

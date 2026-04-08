@@ -1,0 +1,189 @@
+[
+    {
+        "id": 1,
+        "name": "Midas",
+        "logo": "/loghi/midas.svg",
+        "category": "audio"
+    },
+    {
+        "id": 2,
+        "name": "dB Technologies",
+        "logo": "/loghi/dbtechnologies-white.png",
+        "category": "audio"
+    },
+    {
+        "id": 3,
+        "name": "Martin Audio",
+        "logo": "/loghi/MartinIphone.svg",
+        "category": "audio"
+    },
+    {
+        "id": 4,
+        "name": "JBL",
+        "logo": "/loghi/JBL Black Logo Vector.svg",
+        "category": "audio"
+    },
+    {
+        "id": 5,
+        "name": "Lab Gruppen",
+        "logo": "/loghi/lab-gruppen.svg",
+        "category": "audio"
+    },
+    {
+        "id": 6,
+        "name": "Linea Research",
+        "logo": "/loghi/LR-Logo_Blue-Light-Kings-Logo.svg",
+        "category": "audio"
+    },
+    {
+        "id": 7,
+        "name": "Crest Audio",
+        "logo": "/loghi/CrestAudio_Logo_White.webp",
+        "category": "audio"
+    },
+    {
+        "id": 8,
+        "name": "Shure",
+        "logo": "/loghi/Shure Icon Logo Vector.png",
+        "category": "audio"
+    },
+    {
+        "id": 9,
+        "name": "DPA",
+        "logo": "/loghi/dpa-logo-black-screen.svg",
+        "category": "audio"
+    },
+    {
+        "id": 10,
+        "name": "Sennheiser",
+        "logo": "/loghi/Sennheiser Logo Vector.svg",
+        "category": "audio"
+    },
+    {
+        "id": 11,
+        "name": "AKG",
+        "logo": "/loghi/akg.svg",
+        "category": "audio"
+    },
+    {
+        "id": 12,
+        "name": "Meyer Sound",
+        "logo": "/loghi/meyer-sound.svg",
+        "category": "audio"
+    },
+    {
+        "id": 13,
+        "name": "Pioneer",
+        "logo": "/loghi/Pioneer_Corporation_Logo.png",
+        "category": "audio"
+    },
+    {
+        "id": 14,
+        "name": "MA Lighting",
+        "logo": "/loghi/maGiusto.png",
+        "category": "lights"
+    },
+    {
+        "id": 15,
+        "name": "ChamSys",
+        "logo": "/loghi/chamsys.svg",
+        "category": "lights"
+    },
+    {
+        "id": 16,
+        "name": "Clay Paky",
+        "logo": "/loghi/clay_pakyGiusto.svg",
+        "category": "lights"
+    },
+    {
+        "id": 17,
+        "name": "Robe",
+        "logo": "/loghi/robe-black.svg",
+        "category": "lights"
+    },
+    {
+        "id": 18,
+        "name": "Showtec",
+        "logo": "/loghi/showtec.png",
+        "category": "lights"
+    },
+    {
+        "id": 19,
+        "name": "Spotlight",
+        "logo": "/loghi/Spotlight-Logo.png",
+        "category": "lights"
+
+    },
+    {
+        "id": 20,
+        "name": "Infiled",
+        "logo": "/loghi/infiled.svg",
+        "category": "video"
+    },
+    {
+        "id": 21,
+        "name": "NovaStar",
+        "logo": "/loghi/novastar.svg",
+        "category": "video"
+    },
+    {
+        "id": 22,
+        "name": "Blackmagic Design",
+        "logo": "/loghi/gn-logo.svg",
+        "category": "video"
+    },
+    {
+        "id": 23,
+        "name": "Epson",
+        "logo": "/loghi/logoEpson.png",
+        "category": "video"
+    },
+    {
+        "id": 24,
+        "name": "Green-GO",
+        "logo": "/loghi/greengo.svg",
+        "category": "video"
+    },
+    {
+        "id": 25,
+        "name": "Luminex",
+        "logo": "/loghi/Luminex_logo.svg",
+        "category": "video"
+    },
+    {
+        "id": 26,
+        "name": "Litec",
+        "logo": "/loghi/litec.svg",
+        "category": "structures"
+    },
+    {
+        "id": 27,
+        "name": "Kuzar",
+        "logo": "/loghi/kuzar.svg",
+        "category": "structures"
+    },
+    {
+        "id": 28,
+        "name": "GIS",
+        "logo": "/loghi/gis-giusta.png",
+        "category": "structures"
+    },
+    {
+        "id": 29,
+        "name": "Stagesmarts",
+        "logo": "/loghi/stagesmarts.svg",
+        "category": "electricity"
+    },
+    {
+        "id": 30,
+        "name": "Powerbox by Valentini",
+        "logo": "/loghi/syntax.svg",
+        "category": "electricity"
+    },
+    {
+        "id": 31,
+        "name": "ETC Litghting",
+        "logo": "/loghi/ETC_wht.png",
+        "category": "lights"
+    }
+]

@@ -1,0 +1,38 @@
+[
+  {
+    "id": 2,
+    "category": "Eventi Corporate",
+    "photo": "/regia.avif",
+    "description": "Congressi, presentazioni, feste aziendali con setup professionale"
+  },
+  {
+    "id": 3,
+    "category": "Teatro",
+    "photo": "/palcoDietroTeatro.avif",
+    "description": "Impianti audio e luci per produzioni teatrali di ogni dimensione"
+  },
+  {
+    "id": 4,
+    "category": "Festival",
+    "photo": "/palcoFaskW.avif",
+    "description": "Palchi completi per concerti e festival musicali"
+  },
+  {
+    "id": 5,
+    "category": "Eventi in Montagna",
+    "photo": "/monvisoDavanti.avif",
+    "description": "Attrezzatura speciale per location in alta quota"
+  },
+  {
+    "id": 6,
+    "category": "Feste Private",
+    "photo": "/batteriaBanana.avif",
+    "description": "Compleanni, anniversari, feste: rendiamo speciale ogni celebrazione"
+  },
+  {
+    "id": 7,
+    "category": "Eventi Pubblici",
+    "photo": "/tapageTeatroDavanti.avif",
+    "description": "Sagre, feste patronali, concerti in piazza: eventi pubblici di ogni dimensione"
+  }
+]

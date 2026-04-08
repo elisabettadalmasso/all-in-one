@@ -9,7 +9,7 @@
     gap: 32px;
 }
 
-.footer-colonna h3 {
+.footer-column h3 {
     color: var(--accent);
     font-size: 14px;
     letter-spacing: 0.1em;
@@ -21,8 +21,8 @@
     font-weight: 300;
 }
 
-.footer-colonna p,
-.footer-colonna a {
+.footer-column p,
+.footer-column a {
     color: var(--text-secondary);
     font-size: 14px;
     line-height: 2;
@@ -30,11 +30,11 @@
     display: block;
 }
 
-.footer-colonna a:hover {
+.footer-column a:hover {
     color: var(--accent-hover);
 }
 
-.footer-colonna img {
+.footer-column img {
     width: 160px;
     margin-bottom: 12px;
 }
