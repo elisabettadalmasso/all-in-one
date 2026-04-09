@@ -185,5 +185,11 @@
         "name": "ETC Litghting",
         "logo": "/loghi/ETC_wht.png",
         "category": "lights"
+    },
+    {
+        "id": 32,
+        "name": "Neutrik",
+        "logo": "/loghi/Neutrik-LogoF.png",
+        "category": "lights,audio,video"
     }
 ]
