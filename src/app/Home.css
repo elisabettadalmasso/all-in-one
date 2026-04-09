@@ -115,7 +115,7 @@
     font-weight: 600;
 }
 
-/* CTA Section - Contenuto con max-width */
+
 .cta {
     background: linear-gradient(135deg, var(--accent) 0%, var(--bg-card) 50%, var(--bg-primary) 100%);
     border: 1px solid var(--border);
