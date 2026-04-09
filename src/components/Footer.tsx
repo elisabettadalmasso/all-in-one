@@ -17,11 +17,11 @@ function Footer() {
                 <Link href="/contatti">Contatti</Link>
             </div>
             <div className="footer-column">
-                <p>email: info@allinonesncservice.com</p>
-                <p>Claudio: +39 392 695 3740</p>
-                <p>Paolo: +39 333 938 2155</p>
-                <p>P.IVA: 04047720042</p>
-                <p>SDI: W7YVJK9</p>
+                <a href="mailto:info@allinonesncservice.com">email: info@allinonesncservice.com</a>
+                <a href="tel:+393926953740">Claudio: +39 392 695 3740</a>
+                <a href="tel:+393339382155">Paolo: +39 333 938 2155</a>
+                <a>P.IVA: 04047720042</a>
+                <a>SDI: W7YVJK9</a>
             </div>
 
             <p className="footer-legal">© 2026 All In One S.n.c. — Privacy Policy | Cookie Policy</p>

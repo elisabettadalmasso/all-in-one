@@ -1,0 +1,108 @@
+/* HERO - Opzione A (come Eventi) */
+.about-hero {
+  background: linear-gradient(135deg, var(--bg-primary) 0%, var(--bg-card) 50%, var(--accent) 100%);
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 80px 24px;
+  margin: 0;
+}
+
+
+
+
+
+.about-hero h1 {
+  color: white;
+  font-size: 2.5rem;
+  margin-bottom: 24px;
+}
+
+.about-hero p {
+  color: var(--text-secondary);
+  font-size: 1.1rem;
+  max-width: 800px;
+  line-height: 1.8;
+}
+
+/* SEZIONI CONTENUTO */
+.about-story, .about-people, .section-certificazioni {
+  max-width: 900px;
+  margin: 48px auto;
+  padding: 0 24px;
+}
+
+.about-story h2, .about-people h3, .section-certificazioni h3 {
+  color: var(--accent);
+  margin-bottom: 24px;
+}
+
+.about-story p, .about-people p, .section-certificazioni p {
+  margin-bottom: 20px;
+  line-height: 1.8;
+}
+
+.section-certificazioni ul {
+  list-style: none;
+  padding: 0;
+}
+
+.section-certificazioni li {
+  padding: 12px 0;
+  border-bottom: 1px solid var(--border);
+  color: var(--text-secondary);
+}
+
+/* CTA FINALE */
+.about-cta {
+  background: linear-gradient(135deg, var(--accent) 0%, var(--bg-card) 50%, var(--bg-primary) 100%);
+  text-align: center;
+  padding: 80px 24px;
+  margin: 80px auto 0;
+  max-width: 100%;
+}
+
+.about-cta h3 {
+  color: white;
+  font-size: 2rem;
+  margin-bottom: 16px;
+}
+
+.about-cta p {
+  color: var(--text-secondary);
+  margin-bottom: 32px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.btn-primary {
+  display: inline-block;
+  background: transparent;
+  border: 2px solid white;
+  color: white;
+  padding: 14px 32px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s;
+}
+
+.btn-primary:hover {
+  background: white;
+  color: var(--accent);
+}
+
+/* RESPONSIVE */
+@media (min-width: 1024px) {
+  .about-hero {
+    padding: 120px 48px;
+  }
+  
+  .about-hero h1 {
+    font-size: 3.5rem;
+  }
+}
