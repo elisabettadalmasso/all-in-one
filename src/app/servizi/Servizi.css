@@ -2,6 +2,16 @@ h1 {
     font-family: var(--font-display);
     padding: 24px 16px;
     margin-bottom: 16px;
+    background: linear-gradient(135deg, var(--bg-primary) 0%, var(--bg-card) 50%, var(--accent) 100%);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0;
+  padding: 60px 24px;
+  padding-top: 2vh;
 }
 
 .service-complete {

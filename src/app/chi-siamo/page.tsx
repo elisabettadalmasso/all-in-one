@@ -5,16 +5,17 @@ function About() {
   return (
     <div className="page-container">
       <div className="about-hero">
-        <h1>Chi Siamo</h1>
-        <p>
+        <h1 data-aos="fade-down">Chi Siamo</h1>
+        <p data-aos="fade-up" data-aos-delay="200">
           All In One è una società di servizi tecnici per eventi, fondata da
           Claudio e Paolo, con oltre 15 anni di esperienza nel settore. Siamo
           specializzati in soluzioni audio, luci, video e strutture per ogni
           tipo di evento, dal più intimo al più grandioso.
         </p>
       </div>
-      <section className="about-story">
-        <h2>La nostra storia</h2>
+      
+      <section className="about-story" data-aos="fade-up">
+        <h2 data-aos="fade-down">La nostra storia</h2>
         <p>
           All In One nasce dalla passione di Claudio per il mondo audio, luci e
           video. Da oltre 15 anni progettiamo, allestiamo e gestiamo eventi di
@@ -28,52 +29,40 @@ function About() {
         </p>
         <p>
           Nel 2023 Paolo entra nel progetto come socio, portando con sé anni di
-          esperienza come freelance che lo hanno formato su un’ampia varietà di
+          esperienza come freelance che lo hanno formato su un'ampia varietà di
           lavori e realtà. Insieme, Claudio e Paolo rappresentano la
           combinazione perfetta di organizzazione rigorosa e problem‑solving
           veloce.
         </p>
         <p>
-          Stiamo investendo costantemente in tecnologie all’avanguardia,
+          Stiamo investendo costantemente in tecnologie all'avanguardia,
           mantenendo però lo stesso approccio semplice e diretto: capire subito
           cosa serve, quando serve e come farlo funzionare senza sorprese.
           Puntiamo sulla tecnica solida, sulla precisione e su soluzioni
-          concrete, senza inutile rumore o promesse vuote.
+          concrete.
         </p>
       </section>
-      <section className="about-people">
-        <h3>Claudio e Paolo: due ruoli, un unico obiettivo</h3>
-        <p>
-          Claudio segue la parte commerciale e relazionale: è il primo punto di
-          contatto per i clienti, traduce le esigenze in proposte tecniche e
-          segue il progetto dall’inizio alla fine.
-        </p>
-        <p>
-          Paolo si occupa invece di logistica, gestione del materiale e
-          pianificazione operativa: è lui a organizzare tempi, trasporti e
-          montaggi, garantendo che ogni attrezzatura arrivi al momento giusto e
-          sia pronta a funzionare senza intoppi.
-        </p>
-      </section>
-      <div className="section-certificazioni">
-        <h3>Sicurezza e conformità: i requisiti di All In One</h3>
+      
+      <div className="section-certificazioni" data-aos="fade-up">
+        <h3 data-aos="fade-down">Sicurezza e conformità: i requisiti di All In One</h3>
         <p>
           Per poter realizzare i nostri lavori in totale sicurezza e nel
-          rispetto della normativa, l’azienda è in possesso delle principali
+          rispetto della normativa, l'azienda è in possesso delle principali
           certificazioni tecniche e di prevenzione richieste dal settore.
         </p>
-        <p>
+        <p data-aos="fade-left">
           <strong>CERTIFICAZIONI IN ESSERE PRESSO ALL IN ONE:</strong>
         </p>
         <ul>
-          <li>CERTIFICAZIONE 37/08</li>
-          <li>PIANO OPERATIVO DELLA SICUREZZA</li>
-          <li>PATENTINO LAVORO IN ALTEZZA</li>
-          <li>CERTIFICAZIONE COLLAUDO ALL’ORIGINE DELLE STRUTTURE</li>
-          <li>CERTIFICAZIONE CARICHI SOSPESI</li>
-        </ul>
+  <li data-aos="fade-right" data-aos-delay="100">CERTIFICAZIONE 37/08</li>
+  <li data-aos="fade-left" data-aos-delay="200">PIANO OPERATIVO DELLA SICUREZZA</li>
+  <li data-aos="fade-right" data-aos-delay="300">PATENTINO LAVORO IN ALTEZZA</li>
+  <li data-aos="fade-left" data-aos-delay="400">CERTIFICAZIONE COLLAUDO ALL'ORIGINE DELLE STRUTTURE</li>
+  <li data-aos="fade-right" data-aos-delay="500">CERTIFICAZIONE CARICHI SOSPESI</li>
+</ul>
       </div>
-      <section className="about-cta">
+      
+      <section className="about-cta" data-aos="flip-up">
         <h3>Pronto per il tuo prossimo evento?</h3>
         <p>
           Lavorare con All In One vuol dire scegliere sicurezza, competenza e un

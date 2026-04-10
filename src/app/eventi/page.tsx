@@ -49,7 +49,7 @@ function Events() {
         ))}
       </div>
       {/* CTA */}
-        <div className="event-cta" data-aos="fade-up">
+        <div className="event-cta" data-aos="flip-up">
             <h2>Hai un evento in mente?</h2>
             <p>Ti affianchiamo dalla progettazione all'esecuzione 
    per creare la soluzione perfetta per te.</p>

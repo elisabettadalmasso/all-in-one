@@ -21,10 +21,10 @@ function Services() {
   return (
     <div className="page-container">
       <div className="service-page">
-        <h1>I Nostri Servizi</h1>
+        <h1 data-aos="fade-down">I Nostri Servizi</h1>
         <div className="service-complete">
-          {services.map((service) => (
-            <div key={service.id} className="service-card-detail">
+          {services.map((service, index) => (
+            <div key={service.id} className="service-card-detail" data-aos="fade-up" data-aos-delay={index * 100}>
               <h2>{service.title}</h2>
               <div className="service-content">
                 <picture className="service-photo-small">
@@ -48,9 +48,9 @@ function Services() {
           ))}
         </div>
         <section className="brand-section">
-          <h2>I nostri brand</h2>
+          <h2 data-aos="fade-up">I nostri brand</h2>
 
-          <div className="brand-filter">
+          <div className="brand-filter" data-aos="fade-up" data-aos-delay="100">
             <button
               onClick={() => setActiveFilter("all")}
               className={activeFilter === "all" ? "active" : ""}
@@ -89,10 +89,10 @@ function Services() {
             </button>
           </div>
 
-          <div className="brand-grid">
+          <div className="brand-grid" data-aos="fade-up" data-aos-delay="200">
             {brands
               .filter(
-                (b) => activeFilter === "all" || b.category === activeFilter,
+                (b) => activeFilter === "all" || b.category.split(',').includes(activeFilter),
               )
               .map((b) => (
                 <div key={b.id} className="brand-logo">

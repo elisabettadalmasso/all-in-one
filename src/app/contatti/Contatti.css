@@ -3,18 +3,18 @@
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   text-align: center;
   margin: 0;
   padding: 60px 24px;
-  padding-top: 25vh;
+  padding-top: 2vh;
 }
 .contact-hero h1 {
   color: white;
   margin-bottom: 32px;
   margin-top: 24px;
-  font-size: 2rem;
+  font-size: 2.5rem;
   line-height: 1.3;
 }
 

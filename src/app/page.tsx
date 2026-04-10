@@ -81,7 +81,7 @@ function Home() {
                 ))}
             </div>
             
-            <section className="cta">
+            <section className="cta" data-aos="flip-up">
                 <h2>Facciamo grande il tuo evento</h2>
                 <p>Contattaci per un preventivo o scopri chi siamo</p>
                 <div className="cta-buttons">
