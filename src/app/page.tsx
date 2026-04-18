@@ -7,7 +7,6 @@ import useFetch from "@/hooks/useFetch";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { Service, Work } from "@/types/service";
-import Hero from '@/components/Hero'
 
 function Home() {
     const [activePhoto, setActivePhoto] = useState(0);
