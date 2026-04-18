@@ -1,19 +1,7 @@
 
 .about-hero {
-  background: linear-gradient(135deg, var(--bg-primary) 0%, var(--bg-card) 50%, var(--accent) 100%);
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
   padding: 80px 24px;
-  margin: 0;
 }
-
-
-
-
 
 .about-hero h1 {
   color: white;

@@ -4,7 +4,7 @@ import "./Chisiamo.css";
 function About() {
   return (
     <div className="page-container">
-      <div className="about-hero">
+      <div className="hero-page about-hero">
         <h1 data-aos="fade-down">Chi Siamo</h1>
         <p data-aos="fade-up" data-aos-delay="200">
           All In One è una società di servizi tecnici per eventi, fondata da

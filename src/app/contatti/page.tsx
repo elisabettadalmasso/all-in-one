@@ -4,7 +4,7 @@ import "./Contatti.css";
 function Contacts() {
     return (
         <div className="page-container">
-            <div className="contact-hero">
+            <div className="hero-page contact-hero">
                 <h1 data-aos="fade-down">Contattaci</h1>
                 <p data-aos="fade-up" data-aos-delay="200">
                     Hai un progetto in mente? Siamo qui per aiutarti a realizzarlo. 

@@ -1,19 +1,20 @@
 "use client"
 
 import Link from "next/link";
-import { useEffect, useState } from "react";
 import "./Home.css";
+import { useEffect, useState } from "react";
 import useFetch from "@/hooks/useFetch";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { Hero, Service, Work } from "@/types/service";
+import { Service, Work } from "@/types/service";
+import Hero from '@/components/Hero'
 
 function Home() {
     const [activePhoto, setActivePhoto] = useState(0);
 
     const { data: photos, loading: loadingPhotos, error: errorPhotos } = useFetch<Hero>("/data/hero.json");
-    const { data: services, loading: loadingServices } = useFetch<Service>("/data/services.json");
-    const { data: works, loading: loadingWorks } = useFetch<Work>("/data/works.json");
+    const { data: services } = useFetch<Service>("/data/services.json");
+    const { data: works } = useFetch<Work>("/data/works.json");
 
     useEffect(() => {
 
@@ -36,6 +37,8 @@ function Home() {
     if (!photos || photos.length === 0) return <p>Nessuna foto disponibile</p>;
 
     return (
+        <>
+        {/* <Hero /> */}
         <div className="page-container">
             <div className="hero" key={activePhoto}>
                 <picture>
@@ -52,6 +55,7 @@ function Home() {
                     {photos[activePhoto]?.title}
                 </h1>
             </div>
+            
             
             <div className="services">
                 {services.map((service, index) => (
@@ -90,6 +94,7 @@ function Home() {
                 </div>
             </section>
         </div>
+        </>
     );
 }
 

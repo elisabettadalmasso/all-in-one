@@ -1,26 +1,9 @@
-h1 {
-    font-family: var(--font-display);
-    padding: 24px 16px;
-    margin-bottom: 16px;
-    background: linear-gradient(135deg, var(--bg-primary) 0%, var(--bg-card) 50%, var(--accent) 100%);
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  margin: 0;
-  padding: 60px 24px;
-  padding-top: 2vh;
-}
-
 .service-complete {
     padding: 30px 20px;  
 }
 
 .service-card-detail {
     background-color: var(--bg-card);
-    border: none;
     border-left: 6px solid var(--accent);
     box-shadow: 0 2px 8px rgba(0, 123, 255, 0.2);
     border-radius: 8px;
@@ -39,12 +22,10 @@ h1 {
 }
 
 .service-photo-small {
-    display: block;
     flex-shrink: 0; 
     width: 150px;
     height: 150px;
     border-radius: 8px;
-    overflow: hidden;
 }
 
 

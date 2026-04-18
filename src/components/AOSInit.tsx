@@ -13,5 +13,5 @@ export default function AOSInit() {
         })
     }, [])
 
-    return null  // Non renderizza nulla
+    return null  
 }
