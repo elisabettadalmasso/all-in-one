@@ -6,7 +6,7 @@ import { useEffect, useState } from "react";
 import useFetch from "@/hooks/useFetch";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { Service, Work } from "@/types/service";
+import { Hero, Service, Work } from "@/types/service";
 
 function Home() {
     const [activePhoto, setActivePhoto] = useState(0);
@@ -37,7 +37,6 @@ function Home() {
 
     return (
         <>
-        {/* <Hero /> */}
         <div className="page-container">
             <div className="hero" key={activePhoto}>
                 <picture>
