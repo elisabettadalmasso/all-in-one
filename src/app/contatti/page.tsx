@@ -1,16 +1,25 @@
 import Link from "next/link";
 import "./Contatti.css";
+import Hero from '@/components/Hero'
 
 function Contacts() {
     return (
         <div className="page-container">
-            <div className="hero-page contact-hero">
+            <Hero 
+            className='contact-hero'
+            titleAos='fade-down'
+            title='Contattaci'
+            descriptionDelay='200'
+            description=' Hai un progetto in mente? Siamo qui per aiutarti a realizzarlo. 
+                    Contattaci direttamente via email o telefono.'
+            />
+            {/* <div className="hero-page contact-hero">
                 <h1 data-aos="fade-down">Contattaci</h1>
                 <p data-aos="fade-up" data-aos-delay="200">
                     Hai un progetto in mente? Siamo qui per aiutarti a realizzarlo. 
                     Contattaci direttamente via email o telefono.
                 </p>
-            </div>
+            </div> */}
             
             <section className="contact-grid">
                 <a href="tel:+393926953740" className="contact-card" data-aos="fade-right">

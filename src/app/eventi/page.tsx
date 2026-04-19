@@ -2,6 +2,7 @@
 import useFetch from '@/hooks/useFetch'
 import { EventType } from '@/types/service'
 import Link from 'next/link'
+import Hero from '@/components/Hero'
 import './Eventi.css'
 
 function Events() {
@@ -13,7 +14,22 @@ function Events() {
     <>
       <div className="page-container">
         {/*HERO*/}
-        <div className="hero-page event-hero">
+        <Hero
+        className="event-hero"
+          badge="ALL IN ONE"
+          titleAos = 'fade-up'
+          titleDelay='200'
+          title={
+            <>
+              Ogni evento merita
+              <br />
+              la tecnica giusta
+            </>
+          }
+          descriptionDelay='400'
+          description="Eventi corporate, produzioni teatrali, festival musicali, grandi concerti. Ogni evento è unico, noi ci adattiamo alle tue esigenze."
+        />
+        {/* <div className="hero-page event-hero">
           <div className="hero-badge" data-aos="fade-down">
             ALL IN ONE
           </div>
@@ -25,7 +41,7 @@ function Events() {
             </h1>
             <p data-aos="fade-up" data-aos-delay="400">Eventi corporate, produzioni teatrali, festival musicali, grandi concerti. Ogni evento è unico, noi ci adattiamo alle tue esigenze.</p>
           </div>
-        </div>
+        </div> */}
         {/*EVENT GRID*/}
         <div className="event-grid">
           {events.map((event, index) => (

@@ -4,6 +4,7 @@ import { ServiceDetail, Brand } from '@/types/service'
 import Link from 'next/link'
 import './Servizi.css'
 import { useState } from 'react'
+import Hero from '@/components/Hero'
 
 function Services() {
   const { data: services, loading, error } = useFetch<ServiceDetail>('/data/servicesDetail.json')
@@ -16,9 +17,13 @@ function Services() {
 
   return (
     <div className="page-container">
-      <div className="hero-page">
+      <Hero 
+      titleAos='fade-down'
+      title='I Nostri Servizi'
+      />
+      {/* <div className="hero-page">
         <h1 data-aos="fade-down">I Nostri Servizi</h1>
-      </div>
+      </div> */}
       <div className="service-complete">
         {services.map((service, index) => (
           <div key={service.id} className="service-card-detail" data-aos="fade-up" data-aos-delay={index * 100}>
