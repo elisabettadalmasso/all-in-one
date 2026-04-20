@@ -1,6 +1,7 @@
-import Link from "next/link";
+
 import "./Chisiamo.css";
 import Hero from "@/components/Hero";
+import Cta from '@/components/Cta'
 
 function About() {
   return (
@@ -61,16 +62,25 @@ function About() {
 </ul>
       </div>
       
-      <section className="about-cta" data-aos="flip-up">
-        <h3>Pronto per il tuo prossimo evento?</h3>
+    <Cta 
+      title="Pronto per il tuo prossimo evento?"
+      description=" Lavorare con All In One vuol dire scegliere sicurezza, competenza e un
+          approccio tecnico solido, senza compromessi."
+      primaryButton="Contattaci"
+      primaryButtonHref="/contatti"
+    />  
+      {/* <section className="about-cta cta" data-aos="flip-up">
+        <h2>Pronto per il tuo prossimo evento?</h2>
         <p>
           Lavorare con All In One vuol dire scegliere sicurezza, competenza e un
           approccio tecnico solido, senza compromessi.
         </p>
+        <div className="cta-buttons">
         <Link href="/contatti" className="btn-primary">
           Contattaci
         </Link>
-      </section>
+        </div>
+      </section> */}
     </div>
   );
 }

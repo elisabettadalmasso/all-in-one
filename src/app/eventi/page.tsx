@@ -1,9 +1,9 @@
 'use client'
 import useFetch from '@/hooks/useFetch'
 import { EventType } from '@/types/service'
-import Link from 'next/link'
 import Hero from '@/components/Hero'
 import './Eventi.css'
+import Cta from '@/components/Cta'
 
 function Events() {
   const { data: events, loading, error } = useFetch<EventType>('/data/eventTypes.json')
@@ -56,13 +56,21 @@ function Events() {
           ))}
         </div>
         {/* CTA */}
-        <div className="event-cta" data-aos="flip-up">
+         <Cta
+           title="Hai un evento in mente?"
+           description="Ti affianchiamo dalla progettazione all'esecuzione per creare la soluzione perfetta per te."
+           primaryButton="Richiedi un preventivo"
+           primaryButtonHref="/contatti"
+         />
+        {/* <section className="event-cta cta" data-aos="flip-up">
           <h2>Hai un evento in mente?</h2>
           <p>Ti affianchiamo dalla progettazione all'esecuzione per creare la soluzione perfetta per te.</p>
-          <Link href="/contatti" className="btn btn-primary">
+          <div className="cta-buttons">
+          <Link href="/contatti" className="btn-primary">
             Richiedi un preventivo
           </Link>
-        </div>
+          </div>
+        </section> */}
       </div>
     </>
   )

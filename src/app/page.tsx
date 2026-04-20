@@ -7,6 +7,7 @@ import useFetch from "@/hooks/useFetch";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { Hero, Service, Work } from "@/types/service";
+import Cta from '@/components/Cta'
 
 function Home() {
     const [activePhoto, setActivePhoto] = useState(0);
@@ -82,15 +83,24 @@ function Home() {
                     </Link>
                 ))}
             </div>
+
+            <Cta
+             title="Facciamo grande il tuo evento"
+             description="Contattaci per un preventivo o scopri chi siamo"
+             primaryButton="Contattaci"
+             primaryButtonHref="/contatti"
+             secondaryButton="Chi Siamo"
+             secondaryButtonHref="/chi-siamo"
+            />
             
-            <section className="cta" data-aos="flip-up">
+            {/* <section className="cta" data-aos="flip-up">
                 <h2>Facciamo grande il tuo evento</h2>
                 <p>Contattaci per un preventivo o scopri chi siamo</p>
                 <div className="cta-buttons">
-                    <Link href="/contatti" className="cta-btn-primary">Contattaci</Link>
-                    <Link href="/chi-siamo" className="cta-btn-secondary">Chi siamo</Link>
+                    <Link href="/contatti" className="btn-primary">Contattaci</Link>
+                    <Link href="/chi-siamo" className="btn-secondary">Chi siamo</Link>
                 </div>
-            </section>
+            </section> */}
         </div>
         </>
     );
