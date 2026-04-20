@@ -1,10 +1,22 @@
-import Link from "next/link";
+
 import "./Chisiamo.css";
+import Hero from "@/components/Hero";
+import Cta from '@/components/Cta'
 
 function About() {
   return (
     <div className="page-container">
-      <div className="hero-page about-hero">
+      <Hero
+      className='about-hero'
+      titleAos='fade-down'
+      title='Chi Siamo'
+      descriptionDelay='200'
+      description='All In One è una società di servizi tecnici per eventi, fondata da
+          Claudio e Paolo, con oltre 15 anni di esperienza nel settore. Siamo
+          specializzati in soluzioni audio, luci, video e strutture per ogni
+          tipo di evento, dal più intimo al più grandioso.'
+      />
+      {/* <div className="hero-page about-hero">
         <h1 data-aos="fade-down">Chi Siamo</h1>
         <p data-aos="fade-up" data-aos-delay="200">
           All In One è una società di servizi tecnici per eventi, fondata da
@@ -12,7 +24,7 @@ function About() {
           specializzati in soluzioni audio, luci, video e strutture per ogni
           tipo di evento, dal più intimo al più grandioso.
         </p>
-      </div>
+      </div> */}
       
       <section className="about-story" data-aos="fade-up">
         <h2 data-aos="fade-down">La nostra storia</h2>
@@ -21,18 +33,6 @@ function About() {
           video. Da oltre 15 anni progettiamo, allestiamo e gestiamo eventi di
           ogni tipo: concerti, matrimoni, teatro, fiere ed eventi aziendali,
           prevalentemente in Piemonte e dintorni.
-        </p>
-        <p>
-          L'esperienza di Claudio affonda le radici nella tradizione familiare:
-          suo padre prima di lui ha lavorato nello stesso settore, trasferendo
-          competenze tecniche e visione d'insieme.
-        </p>
-        <p>
-          Nel 2023 Paolo entra nel progetto come socio, portando con sé anni di
-          esperienza come freelance che lo hanno formato su un'ampia varietà di
-          lavori e realtà. Insieme, Claudio e Paolo rappresentano la
-          combinazione perfetta di organizzazione rigorosa e problem‑solving
-          veloce.
         </p>
         <p>
           Stiamo investendo costantemente in tecnologie all'avanguardia,
@@ -62,16 +62,25 @@ function About() {
 </ul>
       </div>
       
-      <section className="about-cta" data-aos="flip-up">
-        <h3>Pronto per il tuo prossimo evento?</h3>
+    <Cta 
+      title="Pronto per il tuo prossimo evento?"
+      description=" Lavorare con All In One vuol dire scegliere sicurezza, competenza e un
+          approccio tecnico solido, senza compromessi."
+      primaryButton="Contattaci"
+      primaryButtonHref="/contatti"
+    />  
+      {/* <section className="about-cta cta" data-aos="flip-up">
+        <h2>Pronto per il tuo prossimo evento?</h2>
         <p>
           Lavorare con All In One vuol dire scegliere sicurezza, competenza e un
           approccio tecnico solido, senza compromessi.
         </p>
+        <div className="cta-buttons">
         <Link href="/contatti" className="btn-primary">
           Contattaci
         </Link>
-      </section>
+        </div>
+      </section> */}
     </div>
   );
 }
