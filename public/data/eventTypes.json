@@ -2,7 +2,7 @@
   {
     "id": 2,
     "category": "Eventi Corporate",
-    "photo": "/regia.avif",
+    "photo": "/acquiTeatro.avif",
     "description": "Congressi, presentazioni, feste aziendali con setup professionale"
   },
   {
@@ -26,13 +26,13 @@
   {
     "id": 6,
     "category": "Feste Private",
-    "photo": "/batteriaBanana.avif",
+    "photo": "/frutti-fiore.avif",
     "description": "Compleanni, anniversari, feste: rendiamo speciale ogni celebrazione"
   },
   {
     "id": 7,
     "category": "Eventi Pubblici",
-    "photo": "/tapageTeatroDavanti.avif",
+    "photo": "/tananai.avif",
     "description": "Sagre, feste patronali, concerti in piazza: eventi pubblici di ogni dimensione"
   }
 ]

@@ -8,7 +8,9 @@ function Contacts() {
         <div className="page-container">
             <Hero 
             className='contact-hero'
-            titleAos='fade-down'
+            badge="ALL IN ONE"
+          titleAos = 'fade-up'
+          titleDelay='200'
             title='Contattaci'
             descriptionDelay='200'
             description=' Hai un progetto in mente? Siamo qui per aiutarti a realizzarlo. 

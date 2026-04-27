@@ -7,8 +7,9 @@ function About() {
   return (
     <div className="page-container">
       <Hero
+      badge="ALL IN ONE" titleAos="fade-up" titleDelay="200"
       className='about-hero'
-      titleAos='fade-down'
+      // titleAos='fade-down'
       title='Chi Siamo'
       descriptionDelay='200'
       description='All In One è una società di servizi tecnici per eventi, fondata da

@@ -17,10 +17,8 @@ function Services() {
 
   return (
     <div className="page-container">
-      <Hero 
-      titleAos='fade-down'
-      title='I Nostri Servizi'
-      />
+      <Hero className='service-hero' badge="ALL IN ONE" titleAos="fade-up" titleDelay="200" title="I Nostri Servizi"
+      description= "Non ci vedrai sul palco ma sentirai la differenza. Tecnologia d'eccellenza, brand leader del settore." />
       {/* <div className="hero-page">
         <h1 data-aos="fade-down">I Nostri Servizi</h1>
       </div> */}
