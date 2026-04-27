@@ -2,6 +2,12 @@
 import "./Chisiamo.css";
 import Hero from "@/components/Hero";
 import Cta from '@/components/Cta'
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Chi Siamo | All In One S.n.c.",
+  description: "Claudio e Paolo, oltre 15 anni di esperienza nel settore audio, luci e video. Una realtà piemontese specializzata in servizi tecnici per eventi.",
+};
 
 function About() {
   return (

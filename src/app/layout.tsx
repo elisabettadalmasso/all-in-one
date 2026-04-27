@@ -5,8 +5,8 @@ import Footer from "@/components/Footer";
 import AOSInit from "@/components/AOSInit";
 
 export const metadata: Metadata = {
-  title: "All In One - Audio Luci Eventi",
-  description: "Noleggio e servizi audio, luci e video per eventi",
+  title: "All In One S.n.c. | Audio Luci Video per Eventi",
+  description: "Soluzioni audio, luci, video e strutture per ogni tipo di evento in Piemonte. Oltre 15 anni di esperienza con i migliori brand del settore.",
 };
 
 export default function RootLayout({
