@@ -1,45 +1,49 @@
-"use client"
-
-import Link from "next/link";
+// "use client"
 import "./Home.css";
-import { useEffect, useState } from "react";
-import useFetch from "@/hooks/useFetch";
-import AOS from "aos";
-import "aos/dist/aos.css";
-import { Hero, Service, Work } from "@/types/service";
 import Cta from '@/components/Cta'
+import ServiceList from "@/components/ServiceList";
+import WorksGrid from "@/components/WorksGrid";
+import HeroSlideShow from "@/components/HeroSlideShow";
+
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "All In One S.n.c. | Audio Luci Video per Eventi",
+  description: "Soluzioni audio, luci, video e strutture per ogni tipo di evento in Piemonte. Oltre 15 anni di esperienza con i migliori brand del settore.",
+};
 
 function Home() {
-    const [activePhoto, setActivePhoto] = useState(0);
+    // const [activePhoto, setActivePhoto] = useState(0);
 
-    const { data: photos, loading: loadingPhotos, error: errorPhotos } = useFetch<Hero>("/data/hero.json");
-    const { data: services } = useFetch<Service>("/data/services.json");
-    const { data: works } = useFetch<Work>("/data/works.json");
+    // const { data: photos, loading: loadingPhotos, error: errorPhotos } = useFetch<Hero>("/data/hero.json");
+    // const { data: services } = useFetch<Service>("/data/services.json");
+    // const { data: works } = useFetch<Work>("/data/works.json");
 
-    useEffect(() => {
+    // useEffect(() => {
 
-        if (!photos || photos.length === 0) return;
-        const timer = setInterval(() => {
-            setActivePhoto((prev) => (prev + 1) % photos.length);
-        }, 6000);
+    //     if (!photos || photos.length === 0) return;
+    //     const timer = setInterval(() => {
+    //         setActivePhoto((prev) => (prev + 1) % photos.length);
+    //     }, 6000);
 
-        return () => {
-            clearInterval(timer);
-        };
-    }, [photos]);
+    //     return () => {
+    //         clearInterval(timer);
+    //     };
+    // }, [photos]);
 
-    useEffect(() => {
-        AOS.refresh();
-    }, [activePhoto]);
+    // useEffect(() => {
+    //     AOS.refresh();
+    // }, [activePhoto]);
 
-    if (errorPhotos) return <p>Errore di caricamento</p>;
-    if (loadingPhotos) return <p>Caricamento..</p>;
-    if (!photos || photos.length === 0) return <p>Nessuna foto disponibile</p>;
+    // if (errorPhotos) return <p>Errore di caricamento</p>;
+    // if (loadingPhotos) return <p>Caricamento..</p>;
+    // if (!photos || photos.length === 0) return <p>Nessuna foto disponibile</p>;
 
     return (
         <>
         <div className="page-container">
-            <div className="hero" key={activePhoto}>
+            < HeroSlideShow />
+            {/* <div className="hero" key={activePhoto}>
                 <picture>
                     <source srcSet={photos[activePhoto]?.photo} type="image/avif" />
                     <img
@@ -53,10 +57,10 @@ function Home() {
                 <h1 data-aos="fade-left" data-aos-delay="400">
                     {photos[activePhoto]?.title}
                 </h1>
-            </div>
+            </div> */}
             
-            
-            <div className="services">
+        < ServiceList /> 
+            {/* <div className="services">
                 {services.map((service, index) => (
                     <Link href="/servizi" className="service-card" key={service.id} data-aos="fade-up" data-aos-delay={index * 100}>
                         <p className="service-icon">{service.icon}</p>
@@ -64,9 +68,11 @@ function Home() {
                         <p>{service.description}</p>
                     </Link>
                 ))}
-            </div>
+            </div> */}
             
-            <div className="works-grid">
+        < WorksGrid />
+
+            {/* <div className="works-grid">
                 {works.map((work, index) => (
                     <Link href="/eventi" key={work.id} className="work-card" data-aos="flip-left" data-aos-delay={index * 100}>
                         <picture>
@@ -82,7 +88,7 @@ function Home() {
                         </div>
                     </Link>
                 ))}
-            </div>
+            </div> */}
 
             <Cta
              title="Facciamo grande il tuo evento"

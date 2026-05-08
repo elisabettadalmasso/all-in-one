@@ -1,6 +1,6 @@
 interface HeroProps {
-  title: React.ReactNode;  // permette string o JSX (tipo il <br />)
-  description?: string;     // ? = opzionale
+  title: React.ReactNode;  
+  description?: string;     
   badge?: string;
   className?: string;
   titleAos?: string;

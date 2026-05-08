@@ -2,25 +2,26 @@
 import "./Contatti.css";
 import Hero from '@/components/Hero'
 import Cta from '@/components/Cta'
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Contatti | All In One S.n.c.",
+  description: "Contatta All In One per un preventivo. Siamo disponibili per eventi in Piemonte e su tutto il territorio nazionale.",
+};
 
 function Contacts() {
     return (
         <div className="page-container">
             <Hero 
             className='contact-hero'
-            titleAos='fade-down'
+            badge="ALL IN ONE"
+          titleAos = 'fade-up'
+          titleDelay='200'
             title='Contattaci'
             descriptionDelay='200'
             description=' Hai un progetto in mente? Siamo qui per aiutarti a realizzarlo. 
                     Contattaci direttamente via email o telefono.'
             />
-            {/* <div className="hero-page contact-hero">
-                <h1 data-aos="fade-down">Contattaci</h1>
-                <p data-aos="fade-up" data-aos-delay="200">
-                    Hai un progetto in mente? Siamo qui per aiutarti a realizzarlo. 
-                    Contattaci direttamente via email o telefono.
-                </p>
-            </div> */}
             
             <section className="contact-grid">
                 <a href="tel:+393926953740" className="contact-card" data-aos="fade-right">
@@ -42,7 +43,7 @@ function Contacts() {
                     Per richieste generiche, preventivi o informazioni sui nostri servizi, 
                     siamo pronti a rispondere a ogni tua domanda.
                 </p>
-                <a href="mailto:info@allinonesncservice.com" className="btn-primary">
+                <a href="mailto:info@allinonesncservice.com" className="btn-primary ">
                     Invia un messaggio
                 </a>
             </section>

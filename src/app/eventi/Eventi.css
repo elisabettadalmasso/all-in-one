@@ -19,7 +19,7 @@
   margin: 0 auto;
 } 
 
-.hero-badge {
+/* .hero-badge {
   display: inline-block;
   background: rgba(59, 130, 246, 0.2);
   border: 1px solid var(--accent);
@@ -30,7 +30,7 @@
   color: var(--accent);
   font-weight: 500;
   letter-spacing: 0.5px;
-}
+} */
 
 .event-grid {
     display: grid;

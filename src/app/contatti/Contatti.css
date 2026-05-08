@@ -75,6 +75,15 @@
     margin: 0 auto 32px; 
 }
 
+.contact-mail a {
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
 
 .btn-primary:active {
     transform: scale(0.95); 
