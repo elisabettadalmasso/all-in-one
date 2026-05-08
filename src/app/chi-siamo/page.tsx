@@ -40,7 +40,7 @@ function About() {
           video. Da oltre 15 anni progettiamo, allestiamo e gestiamo eventi di
           ogni tipo: concerti, matrimoni, teatro, fiere ed eventi aziendali,
           prevalentemente in Piemonte e dintorni.
-          
+          {/* senza una parte di ci siamo */}
         </p>
         <p>
           Stiamo investendo costantemente in tecnologie all'avanguardia,
